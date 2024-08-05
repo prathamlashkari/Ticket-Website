@@ -1,0 +1,239 @@
+body, html {
+    margin: 0;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    float: left;
+    padding: 15px;
+    font-size: 20px;
+}
+
+header nav {
+    float: right;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li a {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    background-color: #575757;
+}
+
+main {
+    margin-left: -20px;
+    padding: 20px;
+}
+
+section {
+    padding: 33px 0;
+}
+
+img {
+    width: 92.7rem;
+    height: 15rem;
+}
+
+.content {
+    display: flex;
+    width: 90%;
+    box-sizing: border-box;
+    max-width: 1200px;
+    gap: 20px;
+}
+
+.card-container {
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    flex: 3;
+}
+
+.card {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: auto;
+    height: auto;
+}
+.card .truck img{
+    height: 15rem;
+    background-size: cover;
+    background-position:center;
+}
+
+.container {
+    padding: 0px;
+}
+ .twowheel img{
+    height: 15rem;
+ }
+
+h4{
+    margin-top: -2rem;
+}
+b{
+    margin-left: -10.5rem;
+    /* margin-top: -2rem; */
+    color: blue;
+}
+.container h4 .bus1{
+    margin-left: -15.5rem;
+    margin-top: -1.5rem;
+}
+.container h4 .bus2{
+    margin-left: -5.5rem;
+    margin-top: -1.5rem;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -3.5rem;
+    margin-left: 14.5rem;
+}
+
+.coin {
+    font-size: 1.5em;
+    /* margin: 0.5rem; */
+    color: #333;
+}
+
+.count {
+    font-size: 1.5em;
+    margin: 0.5rem;
+    color: #1b07f8;
+}
+
+.coin {
+    background-color: #b6be22;
+    border: none;
+    color: white;
+    padding: 10px;
+    margin-left: 0rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.add-btn {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px;
+    margin-right: 8rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.summary {
+    background-color: white;
+    padding: 20px;
+   margin-right: -17rem;
+    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    flex: 1;
+}
+
+.summary h4 {
+    margin: 0 0 10px;
+}
+
+.summary .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.summary-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.summary-list li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+#taxi-count{
+   margin-left: 4rem;
+}
+#bus-count{
+    margin-right: 3rem;
+}
+#full-day-count{
+    margin-left: 2rem;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.summary button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.summary button:hover {
+    background-color: #45a049;
+}
